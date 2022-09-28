@@ -1,4 +1,5 @@
 
+
 const Add = document.querySelector("#Button")
 const input = document.querySelector("#AddTask");
 const List = document.querySelector("#Tasks");
@@ -40,7 +41,7 @@ if (localStorage.length != 0) {
         Actions.appendChild(Delete);
     
         Delete.addEventListener("click", () => {
-            Task.style.display = "none";
+            Task.remove()
             localStorage.removeItem(localStorage.key(i))
         })
     
@@ -111,7 +112,8 @@ Form.addEventListener("click", (e) => {
         input.value = "";
 
         Delete.addEventListener("click", () => {
-            Task.style.display = "none";
+            Task.remove();
+            window.localStorage.removeItem(TaskObject.id)
         })
 
         Edit.addEventListener("click", () => {
