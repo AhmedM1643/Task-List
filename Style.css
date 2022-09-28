@@ -124,20 +124,34 @@ form {
 @media (max-width: 1024px) {
 
     .Task {
-        width: 350px;
+        width: 300px;
     }
 
     .Actions {
-        right: 55px;
-
+        right: 20px;
     }
 
     .Actions button {
         width: 64px;
     }
 
+
     #AddTask {
-        width: 290px;
+        width: 240px;
     }
+
+    .TaskText {
+        width: 100px;
+        text-align: center;
+    }
+
+    .TaskInput {
+        width: 100px;
+        text-align: center;
+    }
+
+
+
+
         
 }
