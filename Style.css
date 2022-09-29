@@ -128,11 +128,15 @@ form {
     }
 
     .Actions {
-        right: 20px;
+        right: 10px;
     }
 
     .Actions button {
         width: 64px;
+        font-size: 12px;
+        width: 50px;
+        height: 40px;
+        border-radius: 15px;
     }
 
 
@@ -141,13 +145,14 @@ form {
     }
 
     .TaskText {
-        width: 100px;
-        text-align: center;
+        width: 180px;
+        font-size: 16px;
+        padding-right: 20px;
     }
 
     .TaskInput {
-        width: 100px;
-        text-align: center;
+        width: 180px;
+        font-size: 16px;
     }
 
 
