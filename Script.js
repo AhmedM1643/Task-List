@@ -1,5 +1,4 @@
 
-
 const Add = document.querySelector("#Button")
 const input = document.querySelector("#AddTask");
 const List = document.querySelector("#Tasks");
@@ -127,6 +126,7 @@ Form.addEventListener("click", (e) => {
                 TaskInput.setAttribute("readonly", "readonly");
                 TaskInput.classList.remove("TaskInput");
                 TaskInput.classList.add("TaskText");
+                localStorage.setItem(TaskObject.id, TaskInput.value)
                 Edit.innerHTML = "Edit";
             }
 
